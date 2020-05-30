@@ -1,71 +1,122 @@
-****************
-custom_wx_icons
-****************
+********************************
+Tango Icon Theme for wxPython
+********************************
 
-.. image:: https://travis-ci.com/domdfcoding/custom_wx_icons.svg?branch=master
-    :target: https://travis-ci.com/domdfcoding/custom_wx_icons
-    :alt: Build Status
-.. image:: https://readthedocs.org/projects/custom_wx_icons/badge/?version=latest
-    :target: https://custom_wx_icons.readthedocs.io/en/latest/?badge=latest
-    :alt: Documentation Status
 
-This repository contains a collection of freedesktop-esque icon themes for wxPython.
-Each theme provides a custom wx.ArtProvider class that allows the icons to be accessed using icon names from the `FreeDesktop Icon Theme Specification <https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html>`_.
+.. start short_desc
 
-+----------------------+------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-|wx_icons_hicolor      | This is the base theme for all other themes.                                       | .. image:: https://img.shields.io/pypi/v/wx_icons_hicolor.svg                           |
-|                      | It is based on the                                                                 |    :target: https://pypi.org/project/wx_icons_hicolor/                                  |
-|                      | `gnome-icon-theme <https://launchpad.net/gnome-icon-theme>`_.                      |    :alt: PyPI                                                                           |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/pyversions/wx_icons_hicolor.svg                  |
-|                      |                                                                                    |    :target: https://pypi.org/project/wx_icons_hicolor/                                  |
-|                      |                                                                                    |    :alt: PyPI - Python Version                                                          |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/l/wx_icons_hicolor.svg                           |
-|                      |                                                                                    |    :target: https://github.com/domdfcoding/custom_wx_icons/blob/master/hicolor/LICENSE  |
-|                      |                                                                                    |    :alt: PyPI - License                                                                 |
-+----------------------+------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-|wx_icons_adwaita      | This theme is based on the                                                         | .. image:: https://img.shields.io/pypi/v/wx_icons_adwaita.svg                           |
-|                      | `Adwaita icon theme <https://github.com/GNOME/adwaita-icon-theme>`_                |    :target: https://pypi.org/project/wx_icons_adwaita/                                  |
-|                      | version 3.28.                                                                      |    :alt: PyPI                                                                           |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/pyversions/wx_icons_adwaita.svg                  |
-|                      |                                                                                    |    :target: https://pypi.org/project/wx_icons_adwaita/                                  |
-|                      |                                                                                    |    :alt: PyPI - Python Version                                                          |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/l/wx_icons_adwaita.svg                           |
-|                      |                                                                                    |    :target: https://github.com/domdfcoding/custom_wx_icons/blob/master/adwaita/LICENSE  |
-|                      |                                                                                    |    :alt: PyPI - License                                                                 |
-+----------------------+------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-|wx_icons_humanity     | This theme is based on the                                                         | .. image:: https://img.shields.io/pypi/v/wx_icons_humanity.svg                          |
-|                      | `Humanity icon theme <https://launchpad.net/ubuntu/+source/humanity-icon-theme>`_  |    :target: https://pypi.org/project/wx_icons_humanity/                                 |
-|                      | version 0.6.15.                                                                    |    :alt: PyPI                                                                           |
-|                      | It also includes the Humanity_Dark theme                                           | .. image:: https://img.shields.io/pypi/pyversions/wx_icons_humanity.svg                 |
-|                      |                                                                                    |    :target: https://pypi.org/project/wx_icons_humanity/                                 |
-|                      |                                                                                    |    :alt: PyPI - Python Version                                                          |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/l/wx_icons_humanity.svg                          |
-|                      |                                                                                    |    :target: https://github.com/domdfcoding/custom_wx_icons/blob/master/humanity/LICENSE |
-|                      |                                                                                    |    :alt: PyPI - License                                                                 |
-+----------------------+------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-|wx_icons_suru         | This theme is based on the                                                         | .. image:: https://img.shields.io/pypi/v/wx_icons_suru.svg                              |
-|                      | `Suru icon theme <https://github.com/ubuntu/yaru/blob/master/icons>`_              |    :target: https://pypi.org/project/wx_icons_suru/                                     |
-|                      | version 20.04.4.                                                                   |    :alt: PyPI                                                                           |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/pyversions/wx_icons_suru.svg                     |
-|                      |                                                                                    |    :target: https://pypi.org/project/wx_icons_suru/                                     |
-|                      |                                                                                    |    :alt: PyPI - Python Version                                                          |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/l/wx_icons_suru.svg                              |
-|                      |                                                                                    |    :target: https://github.com/domdfcoding/custom_wx_icons/blob/master/suru/LICENSE     |
-|                      |                                                                                    |    :alt: PyPI - License                                                                 |
-+----------------------+------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-|wx_icons_tango        | This theme is based on public domain icons from the Tango Desktop Project          | .. image:: https://img.shields.io/pypi/v/wx_icons_tango.svg                             |
-|                      |                                                                                    |    :target: https://pypi.org/project/wx_icons_tango/                                    |
-|                      |                                                                                    |    :alt: PyPI                                                                           |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/pyversions/wx_icons_tango.svg                    |
-|                      |                                                                                    |    :target: https://pypi.org/project/wx_icons_tango/                                    |
-|                      |                                                                                    |    :alt: PyPI - Python Version                                                          |
-|                      |                                                                                    | .. image:: https://img.shields.io/pypi/l/wx_icons_tango.svg                             |
-|                      |                                                                                    |    :target: https://github.com/domdfcoding/custom_wx_icons/blob/master/tango/LICENSE    |
-|                      |                                                                                    |    :alt: PyPI - License                                                                 |
-+----------------------+------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+**Tango icon theme for wxPython**
 
-.. .. image:: https://coveralls.io/repos/github/domdfcoding/custom_wx_icons/badge.svg?branch=master
-    :target: https://coveralls.io/github/domdfcoding/custom_wx_icons?branch=master
-    :alt: Coverage
+.. end short_desc
 
-The individual themes contain instructions on how to use them in your program.
+This package provides a wxPython wxArtProvider class with icons from the Tango Icon Theme.
+
+
+.. start shields 
+
+.. list-table::
+	:stub-columns: 1
+	:widths: 10 90
+
+	* - Docs
+	  - |docs|
+	* - Tests
+	  - |travis| |requires| |codefactor|
+	* - PyPI
+	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
+	* - Other
+	  - |license| |language| |commits-since| |commits-latest| |maintained| 
+
+.. |docs| image:: https://readthedocs.org/projects/custom_wx_icons_tango/badge/?version=latest
+	:target: https://custom_wx_icons_tango.readthedocs.io/en/latest/?badge=latest
+	:alt: Documentation Status
+
+.. |travis| image:: https://img.shields.io/travis/com/domdfcoding/custom_wx_icons_tango/master?logo=travis
+	:target: https://travis-ci.com/domdfcoding/custom_wx_icons_tango
+	:alt: Travis Build Status
+
+.. |requires| image:: https://requires.io/github/domdfcoding/custom_wx_icons_tango/requirements.svg?branch=master
+	:target: https://requires.io/github/domdfcoding/custom_wx_icons_tango/requirements/?branch=master
+	:alt: Requirements Status
+
+.. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/custom_wx_icons_tango
+	:target: https://www.codefactor.io/repository/github/domdfcoding/custom_wx_icons_tango
+	:alt: CodeFactor Grade
+
+.. |pypi-version| image:: https://img.shields.io/pypi/v/wx_icons_tango.svg
+	:target: https://pypi.org/project/wx_icons_tango/
+	:alt: PyPI - Package Version
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_tango.svg
+	:target: https://pypi.org/project/wx_icons_tango/
+	:alt: PyPI - Supported Python Versions
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/wx_icons_tango
+	:target: https://pypi.org/project/wx_icons_tango/
+	:alt: PyPI - Supported Implementations
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/wx_icons_tango
+	:target: https://pypi.org/project/wx_icons_tango/
+	:alt: PyPI - Wheel
+
+.. |license| image:: https://img.shields.io/github/license/domdfcoding/custom_wx_icons_tango
+	:alt: License
+	:target: https://github.com/domdfcoding/custom_wx_icons_tango/blob/master/LICENSE
+
+.. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/custom_wx_icons_tango
+	:alt: GitHub top language
+
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/custom_wx_icons_tango/v0.1.1
+	:target: https://github.com/domdfcoding/custom_wx_icons_tango/pulse
+	:alt: GitHub commits since tagged version
+
+.. |commits-latest| image:: https://img.shields.io/github/last-commit/domdfcoding/custom_wx_icons_tango
+	:target: https://github.com/domdfcoding/custom_wx_icons_tango/commit/master
+	:alt: GitHub last commit
+
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2020
+	:alt: Maintenance
+
+.. end shields
+
+Installation
+===============
+
+.. start installation
+
+``wx_icons_tango`` can be installed from PyPI.
+
+To install with ``pip``:
+
+.. code-block:: bash
+
+	$ python -m pip install wx_icons_tango
+
+.. end installation
+
+Usage
+============
+
+To use ``wx_icons_tango`` in your application:
+
+.. code-block:: python
+
+	from wx_icons_tango import wxTangoIconTheme
+
+	class MyApp(wx.App):
+		def OnInit(self):
+			wx.ArtProvider.Push(wxTangoIconTheme())
+			self.frame = TestFrame(None, wx.ID_ANY)
+			self.SetTopWindow(self.frame)
+			self.frame.Show()
+			return True
+
+And then the icons can be accessed through wx.ArtProvider:
+
+.. code-block:: python
+
+	wx.ArtProvider.GetBitmap('document-new', wx.ART_OTHER, wx.Size(48, 48))
+
+Any `FreeDesktop Icon Theme Specification <https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html>`_ name can be used.
+
+Currently the `Client ID` is not used, so just pass `wx.ART_OTHER`.
