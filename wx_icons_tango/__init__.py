@@ -23,14 +23,12 @@
 #  MA 02110-1301, USA.
 #
 
-
 # 3rd party
 import importlib_resources
 
 # this package
 from wx_icons_hicolor import HicolorIconTheme, wxHicolorIconTheme
 from wx_icons_tango import Tango
-
 
 with importlib_resources.path(Tango, "index.theme") as theme_index_path:
 	theme_index_path = str(theme_index_path)
@@ -47,18 +45,18 @@ Tango Icon Theme Version 0.8.90
 
 class TangoIconTheme(HicolorIconTheme):
 	_hicolor_theme = HicolorIconTheme.create()
-	
+
 	@classmethod
 	def create(cls):
 		"""
 		Create an instance of the Tango Icon Theme
 		"""
-		
+
 		with importlib_resources.path(Tango, "index.theme") as theme_index_path:
 			theme_index_path = str(theme_index_path)
-		
+
 		return cls.from_configparser(theme_index_path)
-	
+
 	def find_icon(self, icon_name, size, scale, prefer_this_theme=True):
 		"""
 
@@ -74,7 +72,7 @@ class TangoIconTheme(HicolorIconTheme):
 		:return:
 		:rtype:
 		"""
-		
+
 		icon = self._do_find_icon(icon_name, size, scale, prefer_this_theme)
 		if icon:
 			return icon
@@ -85,7 +83,7 @@ class TangoIconTheme(HicolorIconTheme):
 
 class wxTangoIconTheme(wxHicolorIconTheme):
 	_tango_theme = TangoIconTheme.create()
-	
+
 	def CreateBitmap(self, id, client, size):
 		icon = self._tango_theme.find_icon(id, size.x, None)
 		if icon:
@@ -101,10 +99,10 @@ class wxTangoIconTheme(wxHicolorIconTheme):
 if __name__ == '__main__':
 	# theme = TangoIconTheme.from_configparser(theme_index_path)
 	theme = TangoIconTheme.create()
-	
+
 	# for directory in theme.directories:
 	# 	print(directory.icons)
-	
+
 	from wx_icons_hicolor import test_random_icons, test
 	# test_random_icons(theme)
 	test.test_icon_theme(theme, show_success=False)

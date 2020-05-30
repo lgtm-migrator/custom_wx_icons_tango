@@ -2,7 +2,6 @@
 Tango Icon Theme for wxPython
 ********************************
 
-
 .. start short_desc
 
 **Tango icon theme for wxPython**
