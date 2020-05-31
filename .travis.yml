@@ -30,7 +30,7 @@ jobs:
     - stage: deploy_pypi
       python: "3.6"
       script:
-        - python3 build_icons_from_src.py
+#        - python3 build_icons_from_src.py
         - python3 make_importable.py
       deploy:
         on:
