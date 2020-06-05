@@ -24,10 +24,10 @@
 #
 
 # 3rd party
-import importlib_resources
+import importlib_resources  # type: ignore
+from wx_icons_hicolor import HicolorIconTheme, wxHicolorIconTheme  # type: ignore
 
 # this package
-from wx_icons_hicolor import HicolorIconTheme, wxHicolorIconTheme
 from wx_icons_tango import Tango
 
 with importlib_resources.path(Tango, "index.theme") as theme_index_path:
@@ -103,6 +103,6 @@ if __name__ == '__main__':
 	# for directory in theme.directories:
 	# 	print(directory.icons)
 
-	from wx_icons_hicolor import test_random_icons, test
+	from wx_icons_hicolor import test_random_icons, test  # type: ignore
 	# test_random_icons(theme)
 	test.test_icon_theme(theme, show_success=False)

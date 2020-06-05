@@ -6,14 +6,14 @@ email: "dominic@davis-foster.co.uk"
 version: "0.1.1"
 username: "domdfcoding"
 license: 'LGPLv3+'
-short_desc: 'Tango icon theme for wxPython'
+short_desc: 'Tango icon theme for wxPython.'
 
 enable_tests: False
 enable_conda: False
 
 exclude_files:
   - travis
-  - tox
+#  - tox
 
 python_deploy_version: 3.6
 
@@ -29,7 +29,6 @@ python_versions:
 # additional lines for MANIFEST.in
 manifest_additional:
   - "recursive-include wx_icons_tango *"
-  - "include make_importable.py"
 
 classifiers:
   # "Environment :: MacOS X"
