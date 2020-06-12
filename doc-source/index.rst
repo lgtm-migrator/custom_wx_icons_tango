@@ -25,7 +25,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	* - Other
 	  - |license| |language| |commits-since| |commits-latest| |maintained| 
 
-.. |docs| image:: https://readthedocs.org/projects/custom_wx_icons_tango/badge/?version=latest
+.. |docs| image:: https://img.shields.io/readthedocs/custom_wx_icons_tango/latest?logo=read-the-docs
 	:target: https://custom_wx_icons_tango.readthedocs.io/en/latest/?badge=latest
 	:alt: Documentation Status
 
@@ -37,15 +37,15 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	:target: https://requires.io/github/domdfcoding/custom_wx_icons_tango/requirements/?branch=master
 	:alt: Requirements Status
 
-.. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/custom_wx_icons_tango
+.. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/custom_wx_icons_tango?logo=codefactor
 	:target: https://www.codefactor.io/repository/github/domdfcoding/custom_wx_icons_tango
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/wx_icons_tango.svg
+.. |pypi-version| image:: https://img.shields.io/pypi/v/wx_icons_tango
 	:target: https://pypi.org/project/wx_icons_tango/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_tango.svg
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_tango
 	:target: https://pypi.org/project/wx_icons_tango/
 	:alt: PyPI - Supported Python Versions
 
