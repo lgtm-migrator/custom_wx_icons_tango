@@ -4,7 +4,7 @@ wx_icons_tango
 
 .. start short_desc
 
-**Tango icon theme for wxPython.**
+**Tango icon theme for wxPython 🐍**
 
 .. end short_desc
 
