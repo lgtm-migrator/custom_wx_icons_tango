@@ -51,3 +51,10 @@ classifiers:
 #  - "Development Status :: 7 - Inactive"
   - "Topic :: Software Development :: Libraries :: Python Modules"
   - "Topic :: Software Development :: User Interfaces"
+
+keywords:
+  - wxpython
+  - icons
+  - iconset
+  - tango
+
