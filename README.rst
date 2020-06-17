@@ -18,7 +18,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	:widths: 10 90
 
 	* - Docs
-	  - |docs|
+	  - |docs| |docs_check|
 	* - Tests
 	  - |travis| |actions_windows| |actions_macos|
 	    |codefactor|
@@ -32,6 +32,10 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 .. |docs| image:: https://img.shields.io/readthedocs/custom_wx_icons_tango/latest?logo=read-the-docs
 	:target: https://custom_wx_icons_tango.readthedocs.io/en/latest/?badge=latest
 	:alt: Documentation Status
+	
+.. |docs| image:: [Docs Check](https://github.com/domdfcoding/custom_wx_icons_tango/workflows/Docs%20Check/badge.svg
+	:target: https://github.com/domdfcoding/custom_wx_icons_tango/actions?query=workflow%3A%22Docs+Check%22
+	:alt: Docs Check Status
 
 .. |travis| image:: https://img.shields.io/travis/com/domdfcoding/custom_wx_icons_tango/master?logo=travis
 	:target: https://travis-ci.com/domdfcoding/custom_wx_icons_tango
