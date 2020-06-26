@@ -58,3 +58,5 @@ keywords:
   - iconset
   - tango
 
+imgbot_ignore:
+  - "wx_icons_tango/*"
