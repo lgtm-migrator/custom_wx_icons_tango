@@ -23,11 +23,13 @@
 #  MA 02110-1301, USA.
 #
 
+# stdlib
+from typing import Any, Optional, Tuple, Union
+
 # 3rd party
-from typing import Optional, Any, Union, Tuple
-import wx  # type: ignore
 import importlib_resources  # type: ignore
-from wx_icons_hicolor import HicolorIconTheme, wxHicolorIconTheme, Icon  # type: ignore
+import wx  # type: ignore
+from wx_icons_hicolor import HicolorIconTheme, Icon, wxHicolorIconTheme  # type: ignore
 
 # this package
 from wx_icons_tango import Tango
@@ -35,7 +37,7 @@ from wx_icons_tango import Tango
 with importlib_resources.path(Tango, "index.theme") as theme_index_path:
 	theme_index_path = str(theme_index_path)
 
-__version__ = "0.1.1"
+__version__: str = "0.1.1"
 
 
 def version():
@@ -65,7 +67,7 @@ class TangoIconTheme(HicolorIconTheme):
 			size: int,
 			scale: Any,
 			prefer_this_theme: bool = True,
-	) -> Optional[Icon]:
+			) -> Optional[Icon]:
 		"""
 
 		:param icon_name:
@@ -82,6 +84,7 @@ class TangoIconTheme(HicolorIconTheme):
 		"""
 
 		icon = self._do_find_icon(icon_name, size, scale, prefer_this_theme)
+
 		if icon:
 			return icon
 		else:
@@ -94,6 +97,7 @@ class wxTangoIconTheme(wxHicolorIconTheme):
 
 	def CreateBitmap(self, id: Any, client: Any, size: Union[Tuple[int], wx.Size]) -> wx.Bitmap:
 		icon = self._tango_theme.find_icon(id, size[0], None)
+
 		if icon:
 			print(icon, icon.path)
 			return self.icon2bitmap(icon, size[0])
@@ -110,7 +114,6 @@ if __name__ == '__main__':
 
 	# for directory in theme.directories:
 	# 	print(directory.icons)
-
 	# 3rd party
 	from wx_icons_hicolor import test, test_random_icons  # type: ignore
 
