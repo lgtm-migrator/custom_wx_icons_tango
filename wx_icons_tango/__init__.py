@@ -24,8 +24,10 @@
 #
 
 # 3rd party
+from typing import Optional, Any, Union, Tuple
+import wx  # type: ignore
 import importlib_resources  # type: ignore
-from wx_icons_hicolor import HicolorIconTheme, wxHicolorIconTheme  # type: ignore
+from wx_icons_hicolor import HicolorIconTheme, wxHicolorIconTheme, Icon  # type: ignore
 
 # this package
 from wx_icons_tango import Tango
@@ -57,7 +59,13 @@ class TangoIconTheme(HicolorIconTheme):
 
 		return cls.from_configparser(theme_index_path)
 
-	def find_icon(self, icon_name, size, scale, prefer_this_theme=True):
+	def find_icon(
+			self,
+			icon_name: str,
+			size: int,
+			scale: Any,
+			prefer_this_theme: bool = True,
+	) -> Optional[Icon]:
 		"""
 
 		:param icon_name:
@@ -84,11 +92,11 @@ class TangoIconTheme(HicolorIconTheme):
 class wxTangoIconTheme(wxHicolorIconTheme):
 	_tango_theme = TangoIconTheme.create()
 
-	def CreateBitmap(self, id, client, size):
-		icon = self._tango_theme.find_icon(id, size.x, None)
+	def CreateBitmap(self, id: Any, client: Any, size: Union[Tuple[int], wx.Size]) -> wx.Bitmap:
+		icon = self._tango_theme.find_icon(id, size[0], None)
 		if icon:
 			print(icon, icon.path)
-			return self.icon2bitmap(icon, size.x)
+			return self.icon2bitmap(icon, size[0])
 		else:
 			# return self._tango_theme.find_icon("image-missing", size.x, None).as_bitmap()
 			print("Icon not found in Tango theme")
