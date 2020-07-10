@@ -11,7 +11,7 @@ wx_icons_tango
 This package provides a wxPython wxArtProvider class with icons from the Tango Icon Theme.
 
 
-.. start shields 
+.. start shields
 
 .. list-table::
 	:stub-columns: 1
@@ -31,7 +31,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 .. |docs| image:: https://img.shields.io/readthedocs/custom_wx_icons_tango/latest?logo=read-the-docs
 	:target: https://custom_wx_icons_tango.readthedocs.io/en/latest/?badge=latest
 	:alt: Documentation Status
-	
+
 .. |docs_check| image:: https://github.com/domdfcoding/custom_wx_icons_tango/workflows/Docs%20Check/badge.svg
 	:target: https://github.com/domdfcoding/custom_wx_icons_tango/actions?query=workflow%3A%22Docs+Check%22
 	:alt: Docs Check Status
@@ -60,7 +60,7 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	:target: https://pypi.org/project/wx_icons_tango/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_tango
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_tango?logo=python&logoColor=white
 	:target: https://pypi.org/project/wx_icons_tango/
 	:alt: PyPI - Supported Python Versions
 
@@ -73,8 +73,8 @@ This package provides a wxPython wxArtProvider class with icons from the Tango I
 	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/custom_wx_icons_tango
-	:alt: License
 	:target: https://github.com/domdfcoding/custom_wx_icons_tango/blob/master/LICENSE
+	:alt: License
 
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/custom_wx_icons_tango
 	:alt: GitHub top language
