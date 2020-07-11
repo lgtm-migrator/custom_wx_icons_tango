@@ -34,8 +34,8 @@ from wx_icons_hicolor import HicolorIconTheme, Icon, wxHicolorIconTheme  # type:
 # this package
 from wx_icons_tango import Tango
 
-with importlib_resources.path(Tango, "index.theme") as theme_index_path:
-	theme_index_path = str(theme_index_path)
+with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
+	theme_index_path = str(theme_index_path_)
 
 __version__: str = "0.1.1"
 
@@ -56,8 +56,8 @@ class TangoIconTheme(HicolorIconTheme):
 		Create an instance of the Tango Icon Theme
 		"""
 
-		with importlib_resources.path(Tango, "index.theme") as theme_index_path:
-			theme_index_path = str(theme_index_path)
+		with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
+			theme_index_path = str(theme_index_path_)
 
 		return cls.from_configparser(theme_index_path)
 
