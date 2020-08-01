@@ -44,9 +44,9 @@ modname = "wx_icons_tango"
 pypi_name = "wx_icons_tango"
 import_name = "wx_icons_tango"
 __license__ = "GNU Lesser General Public License v3 or later (LGPLv3+)"
-short_desc = "Tango icon theme for wxPython 🐍"
-__author__ = author = "Dominic Davis-Foster"
-author_email = "dominic@davis-foster.co.uk"
+short_desc = 'Tango icon theme for wxPython\u2002🐍'
+__author__ = author = 'Dominic Davis-Foster'
+author_email = 'dominic@davis-foster.co.uk'
 github_username = "domdfcoding"
 web = github_url = "https://github.com/domdfcoding/custom_wx_icons_tango"
 repo_root = pathlib.Path(__file__).parent
