@@ -1,7 +1,7 @@
 include __pkginfo__.py
 include LICENSE
 include requirements.txt
-recursive-exclude **/__pycache__ *
+prune **/__pycache__
 recursive-include wx_icons_tango *
 recursive-include wx_icons_tango *.pyi
 include wx_icons_tango/py.typed
