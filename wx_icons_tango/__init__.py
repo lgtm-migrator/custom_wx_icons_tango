@@ -27,17 +27,19 @@
 from typing import Any, Optional, Tuple, Union
 
 # 3rd party
-import importlib_resources  # type: ignore
+import importlib_resources
 import wx  # type: ignore
-from wx_icons_hicolor import HicolorIconTheme, Icon, wxHicolorIconTheme  # type: ignore
+from wx_icons_hicolor import HicolorIconTheme, Icon, wxHicolorIconTheme
 
 # this package
 from wx_icons_tango import Tango
 
+__version__: str = "0.1.1"
+__all__ = ["TangoIconTheme", "version", "wxTangoIconTheme"]
+
 with importlib_resources.path(Tango, "index.theme") as theme_index_path_:
 	theme_index_path = str(theme_index_path_)
 
-__version__: str = "0.1.1"
 
 
 def version():
@@ -108,14 +110,15 @@ class wxTangoIconTheme(wxHicolorIconTheme):
 			return super().CreateBitmap(id, client, size)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	# theme = TangoIconTheme.from_configparser(theme_index_path)
 	theme = TangoIconTheme.create()
 
 	# for directory in theme.directories:
 	# 	print(directory.icons)
+
 	# 3rd party
-	from wx_icons_hicolor import test, test_random_icons  # type: ignore
+	from wx_icons_hicolor import test, test_random_icons
 
 	# test_random_icons(theme)
 	test.test_icon_theme(theme, show_success=False)
